@@ -1,4 +1,3 @@
-
 /**
  * In order to make our programs even more impressive and interactive, we need to learn how to better leverage
  * boolean expressions. This will allow our programs to follow their own logic. For this example, you should look into
@@ -30,12 +29,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
-        if(b ==true){
-            return false;
+        boolean b2;
+        b2=(b==true)?false:true;
+        return b2;
 
-        }else{
-            return true;
-        }
         
     }
 
@@ -46,14 +43,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnAnd(boolean b1, boolean b2){
-        if(b1==true&&b2==true){
-            return true;
-        }
-        else{
-            return false;
+        boolean res;
+        res = (b1&&b2==true)?true:false;
+        return res;
 
-
-        }
     }
 
     /**
@@ -63,13 +56,12 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
-        if(b1==true||b2==true){
-            return true;
+        boolean res;
+        res = (b1||b2==true)?true:false;
 
-        }
-        else{
-            return false;
-        }
+        return res;
+
+
     }
 
 
